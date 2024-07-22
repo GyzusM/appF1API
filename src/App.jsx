@@ -22,7 +22,7 @@ function App() {
   const [store] = useContext(StoreContext)
   const {search} = store
 
-  const { data, loading } = useFetchErgast(`http://ergast.com/api/f1/2024/driverstandings.json`, search)
+  const { data, loading } = useFetchErgast(`https://ergast.com/api/f1/2024/driverstandings.json`, search)
 
   return (
 
