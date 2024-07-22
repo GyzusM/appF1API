@@ -1,6 +1,7 @@
 const types = {
   searchConstructor: 'search - constructor',
-  searchDriver: 'search- driver'
+  searchDriver: 'search - driver',
+  searchSchedule: 'search - schedule'
 }
 
 const initialStore = {
@@ -18,6 +19,11 @@ const storeReducer = (state, action) => {
       return{
         ...state,
         search: 'driver'
+      }
+    case types.searchSchedule:
+      return{
+        ...state,
+        search: 'calendar'
       }  
     default:
       return state

@@ -25,7 +25,7 @@ html {
   display: flex;
   align-items: start;
   justify-content: space-between;
-  padding: 5px
+  padding: 5px;
 }
 
 .contentMain {
@@ -150,10 +150,56 @@ html {
   color: #1F1F27;
 }
 
-img {
+.driversConstructor img, .contentImg img {
   width: 93px;
   height: 93px;
   filter: drop-shadow(2px 2px 5px #000);
+}
+
+/* Calendar */
+
+.contentCalendar {
+  display: flex;
+  width: 1210px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.dateCell {
+  width: 250px;
+  height: 300px;
+  margin-bottom: 50px;
+  display: flex;
+}
+
+.cellContent {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  width: 250px;
+  height: 266px;
+  border-radius: 5px;
+  border: 2px solid #F4F4F4;
+  box-shadow: 1px 1px 6px #000;
+  align-self: flex-end;
+}
+
+.cellContent h2 {
+  margin-top: -25px;
+  color: #E10600;
+}
+
+
+.cellContent img {
+  margin: 0 auto;
+  margin-top: 38px;
+}
+
+.cellContent .city {
+  width: 220px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #000;
+  text-align: center;
 }
 
 @keyframes move {

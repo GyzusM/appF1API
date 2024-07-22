@@ -1,0 +1,11 @@
+[
+  {
+    "applyTo": "driverstandings.json",
+    "headers": [
+      {
+        "name": "access-control-allow-origin",
+        "value": "*"
+      }
+    ]
+  }
+]

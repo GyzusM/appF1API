@@ -5,7 +5,7 @@ import { types } from "../store/storeReducer";
 
 const Dropdown = () => {
 
-  const options = ['Driver Standings', 'Constructor Standings'];
+  const options = ['Driver Standings', 'Constructor Standings', 'Schedule'];
 
   const [store, dispatch] = useContext(StoreContext)
   const {search} = store
@@ -51,9 +51,11 @@ const Dropdown = () => {
                         setIsOpen(false)
                         if (option === 'Constructor Standings') {
                           dispatch({type: types.searchConstructor})
-                        } else {
+                        } else if (option === 'Driver Standings'){
                           dispatch({type: types.searchDriver})
-                        } 
+                        } else if (option === 'Schedule'){
+                          dispatch({type: types.searchSchedule})
+                        }
                       }  
                     } 
                     className='w-[100%]'>

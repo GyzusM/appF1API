@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import  Dropdown  from './components/Dropdown'
 import { useFetchErgast } from './useFetchErgastF1'
 import DriverImage from './components/DriverImage'
@@ -7,6 +6,7 @@ import logoF1 from './assets/logoF1_bgRed.png'
 import './App.css'
 import { useContext } from 'react'
 import { StoreContext } from './store/StoreProvider'
+import Calendar from './components/Calendar'
 
 function App() {
   
@@ -33,7 +33,7 @@ function App() {
       </div> 
       <div className='contentMain'>
         <div className='rowTitle mb-8'>
-          {search ==='driver' ? <h1 className='font-[1000] text-4xl'>2024 Driver Championship</h1> : <h1 className='font-[1000] text-4xl'>2024 Constructor Championship</h1> }
+          {search ==='driver' ? <h1 className='font-[1000] text-4xl'>2024 DRIVER CHAMPIONSHIP</h1> : search === 'constructor' ? <h1 className='font-[1000] text-4xl'>2024 CONSTRUCTOR CHAMPIONSHIP</h1> : <h1 className='font-[1000] text-4xl'>2024 F1 CALENDAR</h1>}
         </div>
         <div>
         {search === 'driver' ?
@@ -54,8 +54,9 @@ function App() {
           </div>
           ))}
           </>
-          :
-            <TeamStandings search={search}/>      
+          : search === 'constructor' ?
+            <TeamStandings search={search}/>
+          : <Calendar search={search}/>      
         }
         </div>
       </div>
