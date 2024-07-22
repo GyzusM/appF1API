@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 html {
-  font-family: 'Formula1 Display';
+  font-family: 'Formula1 Display', 'Titillium Web';
+  src: url('../public/fonts/Formula1-Regular_web_0.ttf');
 }
 
 :root {
