@@ -21,7 +21,6 @@ export function useFetchErgast(url) {
         if (search === 'driver') {
           localStorage.setItem("data", JSON.stringify(driverstandings));
           setData(driverstandings);
-          console.log(driverstandings)
         } else if (search === 'constructor') {
           var constructorstandings = data.MRData.StandingsTable.StandingsLists[0].ConstructorStandings;
           localStorage.setItem("data", JSON.stringify(constructorstandings));
