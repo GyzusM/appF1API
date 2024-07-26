@@ -1,0 +1,18 @@
+img.object-fit-contain.w-100.h-100 {}
+
+img.object-fit-contain.w-100.h-100 {}
+
+img.object-fit-contain.w-100.h-100 {}
+
+img.object-fit-contain.w-100.h-100 {}
+
+img.object-fit-contain.w-100.h-100 {}
+
+img.object-fit-contain.w-100.h-100 {}
+
+img.object-fit-contain.w-100.h-100 {}
+
+img.object-fit-contain.w-100.h-100 {
+    scale: 1.2;
+    transform: scale(1.2);
+}
