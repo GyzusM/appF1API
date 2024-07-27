@@ -35,7 +35,7 @@ function App() {
         <div className='rowTitle mb-8'>
           {search ==='driver' ? <h1 className='font-[1000] text-4xl'>2024 DRIVER CHAMPIONSHIP</h1> : search === 'constructor' ? <h1 className='font-[1000] text-4xl'>2024 CONSTRUCTOR CHAMPIONSHIP</h1> : <h1 className='font-[1000] text-4xl'>2024 F1 CALENDAR</h1>}
         </div>
-        <div>
+        <>
         {search === 'driver' ?
           <>
           {loading && <div>Loading...</div>}
@@ -58,7 +58,7 @@ function App() {
             <TeamStandings search={search}/>
           : <Calendar search={search}/>      
         }
-        </div>
+        </>
       </div>
       
     </div>

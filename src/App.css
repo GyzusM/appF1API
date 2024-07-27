@@ -37,10 +37,6 @@ html {
   flex-flow: column;
 }
 
-.rowTitle {
-  border: 2px solid linear-gradient(#f69d3c, #3f87a6);
-}
-
 .rowDriver {
   width: 640px;
   height: 153px;
@@ -210,4 +206,52 @@ html {
   to {
     transform: translateX(0px);
   }
+}
+
+@media (300px <= width <= 768px) {
+  
+  .header .logoF1 {
+    display: none;
+  }
+
+  .margin-auto {
+    margin: 0 auto;
+  }
+
+  .main {
+    margin-top: 10px;
+    padding: 0 2px;
+  }
+
+  .contentMain {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .contentMain h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .contentMain .rowDriver:nth-child(even){
+    display: flex;
+    justify-content: center;
+  }
+
+  .rowDriver{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 35px;
+  }
+
+  .contentCalendar {
+    width: auto;
+    flex-flow: column;
+  }
+
+}
+
+@media (768px > width <= 1024px ) {
+
 }

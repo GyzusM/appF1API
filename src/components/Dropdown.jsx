@@ -16,7 +16,7 @@ const Dropdown = () => {
   const toggling = () => setIsOpen(!isOpen)
 
   return (
-    <div className='inline-flex my-2'>
+    <div className='inline-flex my-2 margin-auto'>
       <div className='min-w-[360px] relative inline-flex border-b-2 bg-white skew-x-[-10deg]'>
         <button type='button' className='font-extrabold text-2xl w-[100%] px-2 py-2'>
           {selectedOption || 'Standings'}
