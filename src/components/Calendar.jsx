@@ -34,6 +34,11 @@ function Calendar() {
     <div className='contentCalendar'>
       {data?.map((gp) => (
         <div key={gp.Circuit.circuitId} className='dateCell'>
+          <div className='round'>
+            <hr />
+            <h4 className='text-center font-[1000]'>R{gp.round}</h4>
+            <hr />
+          </div>
           <div className='cellContent'>
             <h2 className='font-[1000] text-4xl'>{ fechaInicio(gp.FirstPractice.date, true) }</h2>
             <h3 className='font-[1000] text-4xl'>{ fechaInicio(gp.FirstPractice.date, false) }</h3>

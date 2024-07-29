@@ -166,10 +166,10 @@ html {
   width: 250px;
   height: 300px;
   margin-bottom: 50px;
-  display: flex;
 }
 
 .cellContent {
+  margin-top: 20px;
   display: flex;
   align-items: center;
   flex-flow: column;
@@ -206,6 +206,19 @@ html {
   to {
     transform: translateX(0px);
   }
+}
+
+.round {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.round hr {
+  width: 50px;
+  border-color: #000;
+  border-width: 1px;
+  align-self: center;
 }
 
 @media (300px <= width <= 768px) {

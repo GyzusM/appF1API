@@ -5,7 +5,7 @@ import { types } from "../store/storeReducer";
 
 const Dropdown = () => {
 
-  const options = ['Driver Standings', 'Constructor Standings', 'Schedule'];
+  const options = ['Driver Standings', 'Constructor Standings', 'Calendar'];
 
   const [store, dispatch] = useContext(StoreContext)
   const {search} = store
@@ -53,7 +53,7 @@ const Dropdown = () => {
                           dispatch({type: types.searchConstructor})
                         } else if (option === 'Driver Standings'){
                           dispatch({type: types.searchDriver})
-                        } else if (option === 'Schedule'){
+                        } else if (option === 'Calendar'){
                           dispatch({type: types.searchSchedule})
                         }
                       }  
