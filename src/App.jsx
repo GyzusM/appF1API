@@ -3,6 +3,7 @@ import { useFetchErgast } from './useFetchErgastF1'
 import DriverImage from './components/DriverImage'
 import TeamStandings from './components/TeamStandings'
 import logoF1 from './assets/logoF1_bgRed.png'
+import github from './assets/github.png'
 import './App.css'
 import { useContext } from 'react'
 import { StoreContext } from './store/StoreProvider'
@@ -25,7 +26,7 @@ function App() {
   const { data, loading } = useFetchErgast(`https://ergast.com/api/f1/2024/driverstandings.json`, search)
 
   return (
-
+  <>
     <div className='main'>
       <div className="header">      
         <div className='logoF1'><img src={logoF1} alt="" /></div>
@@ -62,7 +63,17 @@ function App() {
       </div>
       
     </div>
-      
+    <footer>
+      <div className='flex justify-center'>
+        <a href="https://github.com/gyzusm" className='flex my-2 text-white'>
+          <img src={github} alt="icon-github" className='mx-1 octocat'/> 
+          <span className='mx-1'>|</span><span className='text-white font-bold gitname'>GyzusM</span></a> 
+      </div>
+      <div className='flex justify-center'>
+        <span className='text-[#f2f2f2]'>By: Jesús Morán</span>
+      </div>
+    </footer>  
+  </>
   )
 }
 

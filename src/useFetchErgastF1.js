@@ -17,7 +17,6 @@ export function useFetchErgast(url) {
         localStorage.setItem("data", JSON.stringify(driverstandings));
         //
         
-        setData(driverstandings);
         if (search === 'driver') {
           localStorage.setItem("data", JSON.stringify(driverstandings));
           setData(driverstandings);
