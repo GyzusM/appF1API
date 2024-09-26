@@ -60,8 +60,7 @@ function App() {
           : <Calendar search={search}/>      
         }
         </>
-      </div>
-      
+      </div>  
     </div>
     <footer>
       <div className='flex justify-center'>
@@ -72,7 +71,7 @@ function App() {
       <div className='flex justify-center'>
         <span className='text-[#f2f2f2]'>By: Jesús Morán</span>
       </div>
-    </footer>  
+    </footer>
   </>
   )
 }
