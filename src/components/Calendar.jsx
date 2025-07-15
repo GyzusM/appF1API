@@ -1,7 +1,7 @@
 import { useFetchCalendar} from '../useFetchCalendar'
 function Calendar() {
 
-  const { data, loading } = useFetchCalendar(`https://ergast.com/api/f1/current.json`)
+  const { data, loading } = useFetchCalendar(`https://api.jolpi.ca/ergast/f1/2025/races/`)
 
   function formatearFechas(inicio,fin) {
     let arrayInicio = inicio.split('-')

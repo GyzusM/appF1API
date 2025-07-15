@@ -5,7 +5,7 @@ function PilotoImagenComponent({ pilotoNombre }) {
   const [imagenUrl, setImagenUrl] = useState('')
 
   const getImages = async() => {
-    await fetch('https://api.openf1.org/v1/drivers?session_key=9465')
+    await fetch('https://api.openf1.org/v1/drivers?session_key=9943')
     .then(response => response.json())
     .then(data => {
       setPilotos(data);

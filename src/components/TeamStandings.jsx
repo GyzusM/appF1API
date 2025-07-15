@@ -2,8 +2,8 @@ import { useFetchErgast } from '../useFetchErgastF1'
 
 function PilotoImagenComponent(search) {
 
-  const { data, loading } = useFetchErgast(`https://ergast.com/api/f1/2024/constructorstandings.json`, search)
-
+  const { data, loading } = useFetchErgast(`https://api.jolpi.ca/ergast/f1/2025/constructorstandings/`, search)
+  
   return (
     <>
     {loading && <span>Loading...</span>}

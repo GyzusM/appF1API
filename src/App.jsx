@@ -23,7 +23,7 @@ function App() {
   const [store] = useContext(StoreContext)
   const {search} = store
 
-  const { data, loading } = useFetchErgast(`https://ergast.com/api/f1/2024/driverstandings.json`, search)
+  const { data, loading } = useFetchErgast(`https://api.jolpi.ca/ergast/f1/2025/driverstandings/`, search)
 
   return (
   <>
@@ -34,7 +34,7 @@ function App() {
       </div> 
       <div className='contentMain'>
         <div className='rowTitle mb-8'>
-          {search ==='driver' ? <h1 className='font-[1000] text-4xl'>2024 DRIVER CHAMPIONSHIP</h1> : search === 'constructor' ? <h1 className='font-[1000] text-4xl'>2024 CONSTRUCTOR CHAMPIONSHIP</h1> : <h1 className='font-[1000] text-4xl'>2024 F1 CALENDAR</h1>}
+          {search ==='driver' ? <h1 className='font-[1000] text-4xl'>2025 DRIVER CHAMPIONSHIP</h1> : search === 'constructor' ? <h1 className='font-[1000] text-4xl'>2025 CONSTRUCTOR CHAMPIONSHIP</h1> : <h1 className='font-[1000] text-4xl'>2025 F1 CALENDAR</h1>}
         </div>
         <>
         {search === 'driver' ?
